@@ -50,7 +50,7 @@ public class Classroom {
         }
         else
         {
-            term = "WS" + y + "/" + (y%2000)+1;
+            term = "WS" + y + "/" + ((y%2000)+1);
             return term;
         }
     }
