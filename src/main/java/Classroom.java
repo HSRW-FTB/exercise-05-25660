@@ -63,12 +63,12 @@ public class Classroom {
 
     public void addStudent(Student student)
     {
-        //for(int i = 0;i < participants.length; i++)
-        //{
-           //participants[2] = student;
-        //}
-        participants = new Student[5];
-        participants[0] = student;
+            for (int i = 0; i < participants.length; i++){
+            participants = new Student[i + 1];
+            participants[i] = student;
+        }
+        //participants = new Student[5];
+        //participants[0] = student;
     }
 
     public String getParticipantsEmail()
