@@ -63,19 +63,13 @@ public class Classroom {
 
     public void addStudent(Student student)
     {
-       /*participants = new Student[100];
+       participants = new Student[100];
        for (int i = 0; i < 100; i++)
        {
           participants[i] = student;
-       }*/
+       }
         //participants = new Student[5];
         //participants[0] = student;
-        for (int n = 1; ; n++){
-            participants = new Student[n];
-            for (int i = 0; i < n; i++){
-                participants[i] = student;
-            }
-        }
     }
 
     public String getParticipantsEmail()
