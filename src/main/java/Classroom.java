@@ -63,12 +63,11 @@ public class Classroom {
 
     public void addStudent(Student student)
     {
-
-            for (int i = 0; i < participants.length; i++)
-            {
-             participants = new Student[participants.length];
-            participants[i] = student;
-            }
+       participants = new Student[100];
+       for (int i = 0; i < 100; i++)
+       {
+          participants[i] = student;
+       }
         //participants = new Student[5];
         //participants[0] = student;
     }
