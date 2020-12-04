@@ -57,7 +57,6 @@ public class Classroom {
 
     public String getID()
     {
-         id = Course.getID();
         return id + "-" + term;
     }
 
