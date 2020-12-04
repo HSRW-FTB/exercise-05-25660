@@ -5,7 +5,7 @@ public class Course {
     private Professor lecturer;
     private int credit;
 
-    //private Course() {}
+    private Course() {}
 
     public Course(String id, String name, Professor professor, int credit)
     {
@@ -15,7 +15,7 @@ public class Course {
         this.credit = credit;
     }
 
-    public String getID()
+    public static String getID()
     {
         return id;
     }
