@@ -15,7 +15,7 @@ public class Course {
         this.credit = credit;
     }
 
-    public static String getID()
+    public String getID()
     {
         return id;
     }
