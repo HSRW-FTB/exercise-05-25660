@@ -73,7 +73,7 @@ public class Classroom {
         for (int n = 1; ; n++){
             participants = new Student[n];
             for (int i = 0; i < n; i++){
-                participants[i] = newStudent;
+                participants[i] = student;
             }
         }
     }
