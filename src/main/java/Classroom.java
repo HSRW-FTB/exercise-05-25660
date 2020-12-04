@@ -63,10 +63,19 @@ public class Classroom {
 
     public void addStudent(Student student)
     {
-        for(int i = 0;i < participants.length; i++)
+        /*for(int i = 0;i < participants.length; i++)
         {
            participants[i] = student;
+        }*/
+                int numberOfStudents = 0;
+        if (numberOfStudents == participants.length)
+        {
+            Student[] tmp = new Student[participants.length * 2];
+            System.arraycopy(participants, 0, tmp, 0, participants.length);
+            participants = tmp;
         }
+        participants[numberOfStudents] = student;
+        numberOfStudents++;
     }
 
     public String getParticipantsEmail()
