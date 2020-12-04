@@ -65,8 +65,10 @@ public class Classroom {
     {
         //for(int i = 0;i < participants.length; i++)
         //{
-           participants[2] = student;
+           //participants[2] = student;
         //}
+        participants = new Student[5];
+        participants[0] = student;
     }
 
     public String getParticipantsEmail()
