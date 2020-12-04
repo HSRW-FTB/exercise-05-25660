@@ -65,7 +65,7 @@ public class Classroom {
     {
         //for(int i = 0;i < participants.length; i++)
         //{
-           participants[0] = student;
+           participants[2] = student;
         //}
     }
 
