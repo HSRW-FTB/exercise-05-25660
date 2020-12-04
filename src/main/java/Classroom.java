@@ -75,7 +75,7 @@ public class Classroom {
     public String getParticipantsEmail()
     {
         int i = 0;
-        while (i < participants.length)
+        while (i < 100)
         {
             i++;
             return participants[i].getID() + "@student.hsrw";
