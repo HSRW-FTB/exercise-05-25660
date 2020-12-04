@@ -63,9 +63,10 @@ public class Classroom {
 
     public void addStudent(Student student)
     {
-        participants = new Student[100];
-            for (int i = 0; i < 100; i++)
+
+            for (int i = 0; i < participants.length; i++)
             {
+             participants = new Student[participants.length];
             participants[i] = student;
             }
         //participants = new Student[5];
@@ -75,7 +76,7 @@ public class Classroom {
     public String getParticipantsEmail()
     {
         int i = 0;
-        while (i < 100)
+        while (i < participants.length)
         {
             i++;
             return participants[i].getID() + "@student.hsrw";
