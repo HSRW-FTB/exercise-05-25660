@@ -35,6 +35,19 @@ public class BucketOfObjects {
    
     public String toString()
     {
-        return "nvm";
+      String obj = "";
+  
+      for(int i = 0; i < items.length; i++)
+      {
+        if(i == (items.length-1))
+        {
+            obj = obj + String.valueOf(items[i]);
+        }
+        else
+        {
+            obj = obj + (String.valueOf(items[i]) + ", ");
+        }
+      }
+      return obj;
     }
 }
