@@ -6,7 +6,8 @@ public class BucketOfObjects {
 
     public void addObject(GeometricObject obj)
     {
-        for(int i = 0; ; i++)
+        items = new GeometricObject[4];
+        for(int i = 0; i < items.length; i++)
         {
             items[i] = obj;
         }
