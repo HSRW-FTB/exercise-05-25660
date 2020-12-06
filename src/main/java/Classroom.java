@@ -74,13 +74,13 @@ public class Classroom {
 
     public String getParticipantsEmail()
     {
-        int i = 0;
-        while (i < participants.length)
+        String partEmail = "";
+        for(int i = 0; i < (participants.length - 1); i++)
         {
-             i++;
-            return participants[i].getID() + "@student.hsrw, ";
+            partEmail = partEmail + (this.participants[i].getFQUN() + ", ");
         }
-        return null;
+        partEmail = partEmail + this.participants[participants.length-1].getFQUN();
+        return partEmail;
     }
 
     public int getTotalParticipants()
