@@ -14,22 +14,27 @@ public class BucketOfObjects {
 
     public double getTotalArea()
     {
-        for(int i = 0; ;i++)
+        double Area = 0;
+        for(int i = 0; i < items.length; i++)
        {
-            return items[i].getArea();
+            Area = Area + items[i].getArea();
        }
+       return Area;
     }
     
     public double getTotalPerimeter()
     {
-        for(int i = 0; ;i++)
+        double Perimeter = 0;
+        for(int i = 0; i < items.length; i++)
        {
-            return items[i].getPerimeter();
+            Perimeter = Perimeter + items[i].getPerimeter();
        }
+       return Perimeter;
+    }
     }
 
     public String toString()
     {
-        return "fuck";
+        return "nvm";
     }
 }
