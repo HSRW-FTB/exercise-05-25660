@@ -31,8 +31,7 @@ public class BucketOfObjects {
        }
        return Perimeter;
     }
-    }
-
+   
     public String toString()
     {
         return "nvm";
