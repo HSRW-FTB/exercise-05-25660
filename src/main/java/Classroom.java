@@ -77,8 +77,8 @@ public class Classroom {
         int i = 0;
         while (i < participants.length)
         {
+             i++;
             return participants[i].getID() + "@student.hsrw, ";
-            i++;
         }
         return null;
     }
