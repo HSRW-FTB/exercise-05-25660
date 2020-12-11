@@ -9,7 +9,7 @@ public class Classroom {
     private String term;
     private int index = -1;
 
-    //private Classroom() {}
+    private Classroom() {}
 
     public Classroom(Course course, String room)
     {
