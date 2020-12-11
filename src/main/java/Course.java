@@ -5,7 +5,7 @@ public class Course {
     private Professor lecturer;
     private int credit;
 
-    //private Course() {}
+    private Course() {}
 
     public Course(String id, String name, Professor lecturer, int credit)
     {
