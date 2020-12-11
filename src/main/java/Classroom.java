@@ -4,11 +4,12 @@ public class Classroom {
 
     private String id;
     private Course course;
-    private Student[] participants;
+    private Student[] participants = new Student[10];
     private String room;
     private String term;
+    private int index = -1;
 
-    private Classroom() {}
+    //private Classroom() {}
 
     public Classroom(Course course, String room)
     {
@@ -63,28 +64,29 @@ public class Classroom {
 
     public void addStudent(Student student)
     {
-       participants = new Student[100];
-       for (int i = 0; i < 100; i++)
-       {
-          participants[i] = student;
-       }
-        //participants = new Student[5];
-        //participants[0] = student;
+        this.index++;
+        this.participants[this.index] = student;   
     }
 
     public String getParticipantsEmail()
     {
         String partEmail = "";
-        for(int i = 0; i < (participants.length - 1); i++)
+        for(int i = 0; i <= index; i++)
         {
-            partEmail = partEmail + (this.participants[i].getFQUN() + ", ");
+            partEmail = partEmail + participants[i].getFQUN() + ", ";
         }
-        partEmail = partEmail + this.participants[participants.length-1].getFQUN();
+
+        partEmail = partEmail.substring(0, partEmail.length() - 2);
         return partEmail;
     }
 
     public int getTotalParticipants()
     {
-        return participants.length;
+        int total = 0;
+        for (int i = 0; i <= index; i++)
+        {
+            total++;
+        }
+        return total;
     }
 }

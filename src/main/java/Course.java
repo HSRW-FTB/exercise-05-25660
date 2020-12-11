@@ -5,13 +5,13 @@ public class Course {
     private Professor lecturer;
     private int credit;
 
-    private Course() {}
+    //private Course() {}
 
-    public Course(String id, String name, Professor professor, int credit)
+    public Course(String id, String name, Professor lecturer, int credit)
     {
         this.id = id;
         this.name = name;
-        this.lecturer = professor;
+        this.lecturer = lecturer;
         this.credit = credit;
     }
 

@@ -16,6 +16,12 @@ public class TestBucketOfObjects {
     bucket.addObject(pol1);
     bucket.addObject(pol2);
 
+    System.out.println(tri1.getPerimeter());
+    System.out.println(rec1.getPerimeter());
+    System.out.println(cir1.getPerimeter());
+    System.out.println(pol1.getPerimeter());
+    System.out.println(pol2.getPerimeter());
+
     System.out.println(bucket.getTotalPerimeter());
     System.out.println(bucket.getTotalArea());
     System.out.println(bucket.toString());

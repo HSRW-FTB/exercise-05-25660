@@ -6,11 +6,11 @@ public class Student extends User {
     private StudyCourse studycourse;
     Domain domain = Domain.STUDENT; 
 
-    private Student()
+    /*private Student()
     {
       Integer.toString(idGen);
       idGen++;
-    }
+    }*/
 
     public Student(String firstname , String lastname) 
     {
